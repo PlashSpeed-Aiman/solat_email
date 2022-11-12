@@ -12,7 +12,7 @@ def send_email(msg:str) -> None:
     smtp_server : str = os.getenv('SMTP_SERVER')
     port : int = os.getenv('SMTP_PORT_NUM')
     sender_email : str = os.getenv('SENDER_EMAIL_VAR')
-    receiver_email : str = 'amarsyerif8@gmail.com'
+    receiver_email : str = ''
     password:str  = os.getenv('EM_PASS')
 
     context : ssl.SSLContext = ssl.create_default_context()
